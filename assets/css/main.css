@@ -1,0 +1,96 @@
+main{
+  /* Max width for the whole page */
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1, h2 {
+  font-family: 'Trebuchet MS', cursive;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.button {
+  /* Button Styling */
+  padding: 0.5em 1em;
+
+  margin: auto;
+
+  background: papayawhip;
+  border-color: black;
+  border-radius: 0.5em;
+
+  color: blue;
+  
+  font-size: 18px;
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+.button:hover {
+  /* Buton Hover State Styling */
+  background-color: white;
+}
+
+.button:active {
+  /* Button Active State Styling */
+  background-color: lightgray;
+}
+
+.entries {
+  margin: 0 0 2em 0;
+  display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(350px, 350px));
+  grid-auto-rows: minmax(800px, 800px);
+  gap: 20px;
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  max-width: 40ch;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  padding: 0.5em;
+  border: 2px solid black;
+}
+
+article > img {
+  max-width: 30ch;
+}
+
+article > a {
+  max-width: fit-content;
+
+  font-family: "Roboto", Helvetica, sans-serif;
+  margin-top: 2em;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
